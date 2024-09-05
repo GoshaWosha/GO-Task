@@ -1,0 +1,24 @@
+import "fmt"
+
+type Subject struct {
+	name  string
+	code  string
+	hours int
+}
+
+func task1(subject Subject) {
+	fmt.Printf("Name = %v, code = %v, hours = %v", subject.name, subject.code, subject.hours)
+}
+
+func main() {
+
+	// Blockchain
+	subject1 := Subject{
+		name:  "Blockchain",
+		code:  "CY20032",
+		hours: 20,
+	}
+
+	task1(subject1)
+
+}
